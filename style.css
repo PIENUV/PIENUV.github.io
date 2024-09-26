@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.cerita-terbaru {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.cerita-terbaru article {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cerita-terbaru article:hover {
+    transform: scale(1.05);
+}
+
+.cerita-terbaru article h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #4a90e2;
+}
+
+.cerita-terbaru article p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.cerita-terbaru article a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4a90e2;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.info-cerita {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pilihan-chapter h2 {
+    margin-bottom: 1rem;
+}
+
+.pilihan-chapter ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pilihan-chapter ul li {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pilihan-chapter ul li:hover {
+    transform: scale(1.05);
+}
+
+.pilihan-chapter ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    display: block;
+}
+
+/* Menghilangkan tanda link */
+a {
+    text-decoration: none;
+    color: inherit; /* Warna mengikuti teks biasa */
+}
+
+/* Style untuk efek hover di link judul cerita */
+.cerita-terbaru article h2 a:hover {
+    color: #4a90e2; /* Mengubah warna teks saat di-hover */
+}
+
+.pilihan-chapter ul li a:hover {
+    color: #4a90e2; /* Mengubah warna link chapter saat di-hover */
+}
+
+.isi-chapter {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Tombol Back */
+.navigasi-back {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.navigasi-back a {
+    text-decoration: none;
+    color: white;
+    background-color: #4a90e2;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navigasi-back a:hover {
+    background-color: #357abd;
+}
+
+/* Navigasi Antar Chapter */
+.navigasi-chapter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.navigasi-chapter a {
+    text-decoration: none;
+    color: white;
+    background-color: #4a90e2;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navigasi-chapter a:hover {
+    background-color: #357abd;
+}
